@@ -1,5 +1,5 @@
 import {model} from 'mongoose';
-import { reservationSchema } from '../schemas/reservation.js';
+import { reservationSchema } from '../schemas/reservation';
 
 export type ReservationDoc = {
     _id: string;

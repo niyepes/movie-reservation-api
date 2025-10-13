@@ -1,5 +1,4 @@
 import {Schema} from 'mongoose';
-import { minLength } from 'zod';
 
 export const reservationSchema = new Schema({
     reservationDate: { type: String, required: true },

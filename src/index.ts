@@ -1,9 +1,10 @@
 import express from 'express';
 import cors from 'cors';
-import {connectToDatabase} from './db/mongo.js';
-import reservationRouter from './routes/reservationRoutes.js';
+
+import {connectToDatabase} from './db/mongo';
+import reservationRouter from './routes/reservationRoutes';
 import { errorHandler } from './middlewares/error';
-import {ENV} from './config/env.js';
+import {ENV} from './config/env';
 
 async function bootstrap() {
     await connectToDatabase();
